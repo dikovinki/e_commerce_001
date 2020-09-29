@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Productss - RedStore</title>
+
     <!-- STYLES -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Custom fonts -->
@@ -16,63 +17,39 @@
 
 <body>
     <!-- HEADER SECTION -->
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="images/logo.png" width="125px" alt="main_logo_img">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px" alt="cart-img">
-                <img src="images/menu.png" alt="hamburger-menu-img" class="menu-icon" onclick="menutoggle()">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px" alt="main_logo_img">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Workout<br>A New Style</h1>
-                    <p>Success isn't always about greatness. It's about consistency. Consistent<br>
-                        hard work gains success. Greatness will come.
-                    </p>
-                    <!-- for the arrow used html icon code -->
-                    <a href="" class="btn">Explore Now &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1.png" alt="landing_image">
-                </div>
-            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="cart-img">
+            <img src="images/menu.png" alt="hamburger-menu-img" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
-
-    <!-- FEATURED CATEGORIES -->
-
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- FEATURED PRODUCT -->
 
     <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select name="" id="">
+                <option value="">Default Sorting</option>
+                <option value="">Sort by price</option>
+                <option value="">Sort by popularity</option>
+                <option value="">Sort by rating</option>
+                <option value="">Sort by sale</option>
+            </select>
+        </div>
+
         <div class="row">
             <div class="col-4">
                 <img src="images/product-1.jpg" alt="product-img">
@@ -123,7 +100,6 @@
                 <p>$50.00</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="product-img">
@@ -224,178 +200,75 @@
                 <p>$50.00</p>
             </div>
         </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span> <!-- arrow icon -->
+        </div>
+
     </div>
 
-    <!-- OFFER -->
+    <!-- -----FOOTER----- -->
 
-    <div class="offer">
-        <div class="small-container">
+    <div class="footer">
+        <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <img src="images/exclusive.png" class="offer-img" alt="exclusive-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on RedStore</p>
-                    <h1>Smart Band 4</h1>
-                    <small>The Mi Smart Band 4 features a 39.9% larger
-                        (than Mi Band 3) AMOLED color full-touch display with
-                        adjustable brightness so everything is clear as can be.</small><br>
-
-
-                    <a href="" class="btn">Buy Now &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!------- TESTIMONIAL ------->
-
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corporis consectetur voluptatem placeat. Possimus, deleniti
-                        quibusdam facilis dicta odit qui omnis at id vitae voluptatem nam,
-                        temporibus distinctio nostrum saepe quos.
+                        Download App for Android and iOS mobile phone.
                     </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="play-store-img">
+                        <img src="images/app-store.png" alt="app-store-img">
                     </div>
-                    <img src="images/user-1.png" alt="user-img">
-                    <h3>Sean Parker</h3>
                 </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="logo-white-img">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corporis consectetur voluptatem placeat. Possimus, deleniti
-                        quibusdam facilis dicta odit qui omnis at id vitae voluptatem nam,
-                        temporibus distinctio nostrum saepe quos.
+                        Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
                     </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-2.png" alt="user-img">
-                    <h3>Mike Smith</h3>
                 </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corporis consectetur voluptatem placeat. Possimus, deleniti
-                        quibusdam facilis dicta odit qui omnis at id vitae voluptatem nam,
-                        temporibus distinctio nostrum saepe quos.
-                    </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-3.png" alt="user-img">
-                    <h3>Mabel Joe</h3>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
                 </div>
             </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - DIKOVINKI</p>
         </div>
     </div>
 
-<!-- ------BRANDS------ -->
+    <!-- -----JS for toggle menu----- -->
 
-<div class="brands">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-5">
-                <img src="images/logo-godrej.png" alt="godrej-img">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-oppo.png" alt="godrej-img">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-coca-cola.png" alt="godrej-img">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-paypal.png" alt="godrej-img">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-philips.png" alt="godrej-img">
-            </div>
-        </div>
-    </div>
-</div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
 
-<!-- -----FOOTER----- -->
-
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <p>
-                    Download App for Android and iOS mobile phone.
-                </p>
-                <div class="app-logo">
-                    <img src="images/play-store.png" alt="play-store-img">
-                    <img src="images/app-store.png" alt="app-store-img">
-                </div>
-            </div>
-            <div class="footer-col-2">
-                <img src="images/logo-white.png" alt="logo-white-img">
-                <p>
-                    Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
-                </p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li>Coupons</li>
-                    <li>Blog Post</li>
-                    <li>Return Policy</li>
-                    <li>Join Affiliate</li>
-                </ul>
-            </div>
-            <div class="footer-col-4">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Copyright 2020 - DIKOVINKI</p>
-    </div>
-</div>
-
-<!-- -----JS for toggle menu----- -->
-
-<script>
-    var MenuItems = document.getElementById("MenuItems");
-    MenuItems.style.maxHeight = "0px"
-    function menutoggle(){
-        if(MenuItems.style.maxHeight == "0px")
-        {
-            MenuItems.style.maxHeight = "200px"
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
         }
-        else
-        {
-            MenuItems.style.maxHeight = "0px"
-        }
-    }
-</script>
+    </script>
 </body>
 
 </html>
